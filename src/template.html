@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%=htmlWebpackPlugin.options.title || 'Webpack App'%></title>
+	<script>
+    var winWidth = window.innerWidth;
+    var winHeight = window.innerHeight;
+    var perRemPx = document.getElementsByTagName("html")[0].clientWidth / 10;
+
+    window.addEventListener("resize", function() {
+        perRemPx = document.getElementsByTagName("html")[0].clientWidth / 10;
+        document.getElementsByTagName("html")[0].style.fontSize = perRemPx + "px";
+    });
+    document.getElementsByTagName("html")[0].style.fontSize = perRemPx + "px";
+
+    function disableScroll(){
+        document.addEventListener("touchstart", disabledScroll);
+        document.addEventListener("touchend", disabledScroll);
+        document.addEventListener("touchmove", disabledScroll);
+    }
+
+    function enableScroll(){
+        document.removeEventListener("touchstart", disabledScroll);
+        document.removeEventListener("touchend", disabledScroll);
+        document.removeEventListener("touchmove", disabledScroll);
+    }
+    function disabledScroll(event){
+        event.preventDefault();
+    }
+	</script>
+</head>
+<body>
+    <div class="page" id="page1">1</div>
+    <div class="page" id="page2">2</div>
+    <div class="page" id="page3">3</div>
+    <div class="page" id="page4">4</div>
+    <div class="page" id="page5">5</div>
+    <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+    <script src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+</body>
+</html>
