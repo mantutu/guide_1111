@@ -3,6 +3,22 @@ html, body {
 	margin: 0;
 }
 
+@keyframes float {
+	25% {
+		transform: translateY(-0.5rem);
+	}
+	50%, 100% {
+		transform: translateY(0);
+	}
+	75 {
+		transform: translateY(0.5rem);
+	}
+}
+
+.float {
+	animation: float 1.5s ease-in-out infinite;
+}
+
 .page {
 	position: absolute;
 	height: 100vh;
@@ -41,9 +57,8 @@ html, body {
 	background-image: url("./page1/title.png");
 	width: 7.13rem;
 	height: 5.98rem;
-	top: 50%;
+	top: 4rem;
 	left: 50%;
-	margin-top: -4.99rem;
 	margin-left: -3.56rem;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -53,10 +68,8 @@ html, body {
 	background-image: url("./page1/T-shirt.png");
 	width: 3.63rem;
 	height: 4.43rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 13.33rem;
+	left: 2.933rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -65,10 +78,8 @@ html, body {
 	background-image: url("./page1/camera.png");
 	width: 3.2rem;
 	height: 3.387rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 11.56rem;
+	right: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -77,10 +88,8 @@ html, body {
 	background-image: url("./page1/glasses.png");
 	width: 1.493rem;
 	height: 0.88rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 2.133rem;
+	left: 4.2rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -89,10 +98,8 @@ html, body {
 	background-image: url("./page1/lip.png");
 	width: 0.933rem;
 	height: 0.813rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 3.467rem;
+	left: 1rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -101,10 +108,8 @@ html, body {
 	background-image: url("./page1/lipstick.png");
 	width: 0.64rem;
 	height: 1.24rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 4.8rem;
+	right: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -113,10 +118,8 @@ html, body {
 	background-image: url("./page1/perfume.png");
 	width: 1.83rem;
 	height: 1.99rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 1.133rem;
+	left: 2.133rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -125,10 +128,8 @@ html, body {
 	background-image: url("./page1/watch.png");
 	width: 2.8rem;
 	height: 3.73rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 1.933rem;
+	left: 6.467rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -137,10 +138,8 @@ html, body {
 	background-image: url("./page1/handring.png");
 	width: 2.467rem;
 	height: 2.64rem;
-	top: 50%;
-	left: 50%;
-	margin-top: -4.99rem;
-	margin-left: -3.56rem;
+	top: 11.28rem;
+	left: 0.267rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -149,9 +148,8 @@ html, body {
 	background-image: url("./page1/skateboard.png");
 	width: 1.16rem;
 	height: 1.96rem;
-	top: 50%;
+	top: 8.667rem;
 	right: 0;
-	margin-top: -4.99rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -160,9 +158,8 @@ html, body {
 	background-image: url("./page1/headphone.png");
 	width: 1.76rem;
 	height: 2.933rem;
-	top: 50%;
+	top: 4.6rem;
 	left: 0;
-	margin-top: -4.99rem;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
