@@ -10,7 +10,161 @@ html, body {
 }
 
 #page1 {
-	background: red;
+	top: 0;
+}
+
+#page1 > div {
+	position: absolute;
+}
+
+#page1 .background1 {
+	background-image: url("./page1/background1.png");
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .background2 {
+	background-image: url("./page1/background2.png");
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .title {
+	background-image: url("./page1/title.png");
+	width: 7.13rem;
+	height: 5.98rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .tshirt {
+	background-image: url("./page1/T-shirt.png");
+	width: 3.63rem;
+	height: 4.43rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .camera {
+	background-image: url("./page1/camera.png");
+	width: 3.2rem;
+	height: 3.387rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .glasses {
+	background-image: url("./page1/glasses.png");
+	width: 1.493rem;
+	height: 0.88rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .lip {
+	background-image: url("./page1/lip.png");
+	width: 0.933rem;
+	height: 0.813rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .lipstick {
+	background-image: url("./page1/lipstick.png");
+	width: 0.64rem;
+	height: 1.24rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .perfume {
+	background-image: url("./page1/perfume.png");
+	width: 1.83rem;
+	height: 1.99rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .watch {
+	background-image: url("./page1/watch.png");
+	width: 2.8rem;
+	height: 3.73rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .handring {
+	background-image: url("./page1/handring.png");
+	width: 2.467rem;
+	height: 2.64rem;
+	top: 50%;
+	left: 50%;
+	margin-top: -4.99rem;
+	margin-left: -3.56rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .skateboard {
+	background-image: url("./page1/skateboard.png");
+	width: 1.16rem;
+	height: 1.96rem;
+	top: 50%;
+	right: 0;
+	margin-top: -4.99rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page1 .headphone {
+	background-image: url("./page1/headphone.png");
+	width: 1.76rem;
+	height: 2.933rem;
+	top: 50%;
+	left: 0;
+	margin-top: -4.99rem;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #page2 {
