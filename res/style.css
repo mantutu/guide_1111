@@ -4,19 +4,35 @@ html, body {
 }
 
 @keyframes float {
-	25% {
-		transform: translateY(-0.5rem);
+	0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 	}
-	50%, 100% {
-		transform: translateY(0);
+	50% {
+    -webkit-transform: translateY(0.2rem);
+    transform: translateY(0.2rem);
 	}
-	75 {
-		transform: translateY(0.5rem);
+	100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+	}
+}
+
+@keyframes large {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
 	}
 }
 
 .float {
-	animation: float 1.5s ease-in-out infinite;
+	animation: float ease-in-out 3.5s infinite;
+}
+
+.large {
+	animation: large ease-in-out 1.5s;
 }
 
 .page {
@@ -31,6 +47,8 @@ html, body {
 
 #page1 > div {
 	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #page1 .background1 {
@@ -39,8 +57,6 @@ html, body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 #page1 .background2 {
@@ -49,19 +65,96 @@ html, body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 #page1 .title {
 	background-image: url("./page1/title.png");
 	width: 7.13rem;
 	height: 5.98rem;
-	top: 4rem;
+	top: 4.5rem;
 	left: 50%;
 	margin-left: -3.56rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+}
+
+#page1 .en-title {
+	background-image: url("./page1/en-title.png");
+	width: 4.16rem;
+	height: 0.787rem;
+	top: 80%;
+	left: 50%;
+	margin-left: -2.08rem;
+}
+
+#page1 .ball1 {
+	background-image: url("./page1/ball1.png");
+	width: 0.813rem;
+	height: 0.8rem;
+	top: 15.56rem;
+	left: 6.467rem;
+	animation-delay: 1.5s;
+}
+
+#page1 .ball2 {
+	background-image: url("./page1/ball2.png");
+	width: 0.733rem;
+	height: 0.72rem;
+	top: 9.58rem;
+	left: 0.933rem;
+	animation-delay: 1s;
+}
+
+#page1 .ball3 {
+	background-image: url("./page1/ball3.png");
+	width: 0.507rem;
+	height: 0.507rem;
+	animation-delay: 1.5s;
+}
+
+#page1 .ball3-1 {
+	top: 6.08rem;
+	right: 0.8rem;
+	animation-delay: 0.5s;
+}
+
+#page1 .ball3-2 {
+	top: 12.2rem;
+	left: 5.68rem;
+}
+
+#page1 .ball3-3 {
+	top: 13.6rem;
+	right: 1.04rem;
+	animation-delay: 1s;
+}
+
+#page1 .ball4 {
+	background-image: url("./page1/ball4.png");
+}
+
+#page1 .ball4-1 {
+	width: 0.707rem;
+	height: 1.4rem;
+	background-position: right;
+	top: 2.5rem;
+	left: 0;
+	animation-delay: 1.5s;
+}
+
+#page1 .ball4-2 {
+	width: 0.28rem;
+	height: 0.293rem;
+	background-size: 100%;
+	top: 11rem;
+	left: 3.4rem;
+	animation-delay: 0.5s;
+}
+
+#page1 .ball4-3 {
+	width: 0.746rem;
+	height: 0.76rem;
+	top: 4.233rem;
+	left: 7.667rem;
+	animation-delay: 1s;
 }
 
 #page1 .tshirt {
@@ -70,8 +163,7 @@ html, body {
 	height: 4.43rem;
 	top: 13.33rem;
 	left: 2.933rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 0.5s;
 }
 
 #page1 .camera {
@@ -80,8 +172,7 @@ html, body {
 	height: 3.387rem;
 	top: 11.56rem;
 	right: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 1s;
 }
 
 #page1 .glasses {
@@ -90,8 +181,7 @@ html, body {
 	height: 0.88rem;
 	top: 2.133rem;
 	left: 4.2rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 1.5s;
 }
 
 #page1 .lip {
@@ -100,8 +190,7 @@ html, body {
 	height: 0.813rem;
 	top: 3.467rem;
 	left: 1rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 0s;
 }
 
 #page1 .lipstick {
@@ -110,8 +199,7 @@ html, body {
 	height: 1.24rem;
 	top: 4.8rem;
 	right: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 0.5s;
 }
 
 #page1 .perfume {
@@ -120,18 +208,15 @@ html, body {
 	height: 1.99rem;
 	top: 1.133rem;
 	left: 2.133rem;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 #page1 .watch {
 	background-image: url("./page1/watch.png");
 	width: 2.8rem;
 	height: 3.73rem;
-	top: 1.933rem;
+	top: 1.233rem;
 	left: 6.467rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 1.5s;
 }
 
 #page1 .handring {
@@ -140,8 +225,6 @@ html, body {
 	height: 2.64rem;
 	top: 11.28rem;
 	left: 0.267rem;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 #page1 .skateboard {
@@ -150,8 +233,7 @@ html, body {
 	height: 1.96rem;
 	top: 8.667rem;
 	right: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 1.5s;
 }
 
 #page1 .headphone {
@@ -160,8 +242,7 @@ html, body {
 	height: 2.933rem;
 	top: 4.6rem;
 	left: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
+	animation-delay: 0.5s;
 }
 
 #page2 {
